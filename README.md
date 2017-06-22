@@ -16,6 +16,8 @@
 4. Access the locally running version of the app (assuming `docker-compose up`
   works) at <http://localhost:3000/>.
 
-Dockerized with help from Marko Locker's
+Built with guidance from Michael Hartl's [Rails
+Tutorial](https://www.railstutorial.org) and Dockerized with help from Marko
+Locker's
 [article](https://blog.codeship.com/running-rails-development-environment-docker/).
 
