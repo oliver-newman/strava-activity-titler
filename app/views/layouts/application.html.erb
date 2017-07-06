@@ -10,9 +10,32 @@
                           'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application',
                           'data-turbolinks-track': 'reload' %>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+  <![endif]-->
 </head>
 
 <body>
-  <%= yield %>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <%= link_to "Strava Activity Titler", "#", id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home",   '#' %></li>
+          <li><%= link_to "FAQ",    '#' %></li>
+          <li><%= link_to "Log In", '#' %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
+  <footer>
+    <%= link_to image_tag("strava/pwrdBy_strava/pwrdBy_strava_gray/api_logo_pwrdBy_strava_stack_gray.png", 
+                          alt: "Powered by Strava"), 
+          'https://www.strava.com/' %>
+  </footer>
 </body>
 </html>

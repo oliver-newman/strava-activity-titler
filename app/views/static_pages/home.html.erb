@@ -1,9 +1,11 @@
-<% provide(:title, "Home") %>
+<div class="center jumbotron">
+  <h1>Welcome to Strava Activity Titler!</h1>
 
-<h1>Welcome to Strava Activity Titler!</h1>
+  <p>
+    Strava Activity Titler is a service that uses the Strava API to automatically
+    modify the default titles of a user's activities, based on a set of rules
+    defined by the user.
+  </p>
 
-<p>
-  Strava Activity Titler is a service that uses the Strava API to automatically
-  modify the default titles of a user's activities, based on a set of rules
-  defined by the user.
-</p>
+  <%= link_to "Log in with Strava", '#', class: "btn btn-lg btn-primary" %>
+</div>
